@@ -47,7 +47,7 @@ antitransitive_relation -> nrel_battlefield_3_weapon_full_reload_time;;
 asymmetric_relation -> nrel_battlefield_3_weapon_full_reload_time;;
 
 
-nrel_battlefield_3_weapon_full_reload_time => nrel_first_domain: concept_weapon;;
+nrel_battlefield_3_weapon_full_reload_time => nrel_first_domain: concept_battlefield_3_weapons;;
 nrel_battlefield_3_weapon_full_reload_time => nrel_second_domain: number;;
 nrel_battlefield_3_weapon_full_reload_time => nrel_definitional_domain : ...
 (*

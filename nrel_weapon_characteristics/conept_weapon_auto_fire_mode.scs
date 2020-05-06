@@ -23,7 +23,7 @@ concept_weapon_auto_fire_mode
 <- rrel_key_sc_element: ...
 (*
 	<- statement;;
-	=> nrel_main_idtf:[Утв.1 (Пистолет с автоматическим режимом стрельбы в Battlefield 3)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf:[Утв.1 (Автоматический режим стрельбы в Battlefield 3)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(* 
 		-> [У большинства 

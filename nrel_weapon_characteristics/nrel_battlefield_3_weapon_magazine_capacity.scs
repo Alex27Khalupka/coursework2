@@ -33,7 +33,7 @@ antitransitive_relation -> nrel_battlefield_3_weapon_magazine_capacity;;
 asymmetric_relation -> nrel_battlefield_3_weapon_magazine_capacity;;
 
 
-nrel_battlefield_3_weapon_magazine_capacity => nrel_first_domain: concept_apex_weapon;;
+nrel_battlefield_3_weapon_magazine_capacity => nrel_first_domain: concept_battlefield_3_weapons;;
 nrel_battlefield_3_weapon_magazine_capacity => nrel_second_domain: number;;
 nrel_battlefield_3_weapon_magazine_capacity => nrel_definitional_domain : ...
 (*

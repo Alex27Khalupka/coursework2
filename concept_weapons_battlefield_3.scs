@@ -53,6 +53,21 @@ concept_battlefield_3_weapons
 	*);;
 *);
 
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Улучшения оружия в игре Battlefield 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [На <b><sc_element sys_idtf="concept_battlefield_3_weapons">оружие в Battlefield 3</b></sc_element> могут устанавливаться различные 
+			<b><sc_element sys_idtf="concept_battlefield_3_weapon_equipment">модули</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_equipment;
+        concept_battlefield_3_weapons
+	};;
+*);
+
 <- sc_node_not_relation;;
 
 concept_damage_multiplier -> 2.0;;

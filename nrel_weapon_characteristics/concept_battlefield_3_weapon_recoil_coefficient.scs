@@ -1,7 +1,7 @@
 concept_battlefield_3_weapon_recoil_coefficient
 
 => nrel_main_idtf: [Weapon recoil coefficient (Battlefield 3)] (* <- lang_en;; *);
-=> nrel_main_idtf: [Коэфициент отдачи (Battlefield 3)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Коэффициент отдачи (Battlefield 3)] (* <- lang_ru;; *);
 
 ->0.2k;
 ->0.8k;

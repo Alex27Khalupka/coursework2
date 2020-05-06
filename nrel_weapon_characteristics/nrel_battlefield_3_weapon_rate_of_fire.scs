@@ -46,7 +46,7 @@ antitransitive_relation -> nrel_battlefield_3_weapon_rate_of_fire;;
 asymmetric_relation -> nrel_battlefield_3_weapon_rate_of_fire;;
 
 
-nrel_battlefield_3_weapon_rate_of_fire => nrel_first_domain: concept_weapon;;
+nrel_battlefield_3_weapon_rate_of_fire => nrel_first_domain: concept_battlefield_3_weapons;;
 nrel_battlefield_3_weapon_rate_of_fire => nrel_second_domain: number;;
 nrel_battlefield_3_weapon_rate_of_fire => nrel_definitional_domain : ...
 (*

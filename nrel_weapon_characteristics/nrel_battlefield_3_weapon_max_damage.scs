@@ -15,7 +15,7 @@ nrel_battlefield_3_weapon_max_damage
 	*);;
 	<= nrel_using_constants: {
         concept_battlefield_3_weapons;
-		concept_damage
+	concept_damage
 	};;
 *);
 

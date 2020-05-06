@@ -1,5 +1,5 @@
 concept_battlefield_3_weapon_class_assault_rifle
-=> nrel_main_idtf: [class assault rifle Battlefield 3] (* <- lang_en;; *);
+=> nrel_main_idtf: [Class assault rifle Battlefield 3] (* <- lang_en;; *);
 => nrel_main_idtf: [Класс штурмовые винтовки Battlefield 3] (* <- lang_ru;; *);
 
 <- concept_battlefield_3_weapons;
@@ -10,42 +10,78 @@ concept_battlefield_3_weapon_class_assault_rifle
 	=> nrel_main_idtf:[Опр. (Класс штурмовые винтовки Battlefield 3)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(* 
-		-> [Класс штурмовые винтовки в <b><sc_element sys_idtf="computer_game_battlefield_3">Battlefield 3</b></sc_element> — 
-		особый тип оружия пребназначеный для нанесения урона <b><sc_element sys_idtf="concept_battlefield_3_character">персонажам</b></sc_element> противника.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> [<b><sc_element sys_idtf="concept_battlefield_3_weapon_class_assault_rifle">Класс штурмовые винтовки в Battlefield 3</b></sc_element> — 
+		особый тип 
+		<b><sc_element sys_idtf="concept_battlefield_3_weapons">оружия</b></sc_element>, предназначеный для нанесения урона 
+		<b><sc_element sys_idtf="concept_battlefield_3_character">персонажам</b></sc_element> 
+		противника на ближних и средних дистанциях. Данный класс 
+		<b><sc_element sys_idtf="concept_battlefield_3_weapons">оружия</b></sc_element> доступен только 
+		<b><sc_element sys_idtf="concept_battlefield_3_class_assault">классу штурмовик.</b></sc_element>] (* <- lang_ru;; => nrel_format: format_html;; *);;
 	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_class_assault_rifle;
+        concept_battlefield_3_weapons;
+        concept_battlefield_3_class_assault
+	};;
 *);
 
 
 <- rrel_key_sc_element: ...
 (*
 	<- statement;;
-	=> nrel_main_idtf:[Утв.1 (Классы оружия из игры 'Battlefield 3')] (* <- lang_ru;; *);;
+	=> nrel_main_idtf:[Утв.1 (Урон штурмовых винтовок Battlefield 3)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(* 
-		-> [Штурмовые винтовки обладают следующими характеристиками:<br>
-			максимальный урон: 25<br>
-			минимальный урон: 17<br>
-			ёмкость магази: 20-30 патронов<br>
-			Режим огня: автоматический, одиночный, очередью(не всегда)
-			] (* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> [Все 
+			<b><sc_element sys_idtf="concept_battlefield_3_weapon_class_assault_rifle">штурмовые винтовки</b></sc_element> 
+			обладают 
+			<b><sc_element sys_idtf="nrel_battlefield_3_weapon_max_damage">макимальным уроном</b></sc_element> - 25 и 
+			<b><sc_element sys_idtf="nrel_battlefield_3_weapon_min_damage">минимальным уроном</b></sc_element> - 18.4.] (* <- lang_ru;; => nrel_format: format_html;; *);;
 	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_class_assault_rifle;
+        nrel_battlefield_3_weapon_max_damage;
+        nrel_battlefield_3_weapon_min_damage
+	};;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.1 (Штурмовые винтовоки Battlefield 3)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В <b><sc_element sys_idtf="computer_game_battlefield_3">Battlefield 3</b></sc_element> представлено 10 <b><sc_element sys_idtf="concept_battlefield_3_weapon_class_assault_rifle">штурмовых винтовок</b></sc_element>:<br>
+			<b><sc_element sys_idtf="concept_battlefield_3_weapon_ak_74m">AK-74M</b></sc_element>,<br>
+			<b><sc_element sys_idtf="concept_battlefield_3_weapon_m16a3">M16A3</b></sc_element>,<br>
+			<b><sc_element sys_idtf="concept_battlefield_3_weapon_m416">M416</b></sc_element>,<br>
+			<b><sc_element sys_idtf="concept_battlefield_3_weapon_aek971">AEK-971</b></sc_element>,<br>
+			<b><sc_element sys_idtf="concept_battlefield_3_weapon_m16a4">M16A4</b></sc_element>,<br>
+			<b><sc_element sys_idtf="concept_battlefield_3_weapon_f2000">F2000</b></sc_element>,<br>
+			<b><sc_element sys_idtf="concept_battlefield_3_weapon_an_94">AH-94</b></sc_element>,<br>
+			<b><sc_element sys_idtf="concept_battlefield_3_weapon_g3a3">G3A3</b></sc_element>,<br>
+			<b><sc_element sys_idtf="concept_battlefield_3_weapon_kh2002">KH2002</b></sc_element>,<br>
+			<b><sc_element sys_idtf="concept_battlefield_3_weapon_famas">FAMAS</b></sc_element>,<br>
+			<b><sc_element sys_idtf="concept_battlefield_3_weapon_l82a5">L85A2</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+	<= nrel_using_constants: {
+        concept_battlefield_3_weapon_class_assault_rifle;
+        concept_battlefield_3_weapon_famas;
+        concept_battlefield_3_weapon_kh2002;
+        concept_battlefield_3_weapon_g3a3;
+        concept_battlefield_3_weapon_an_94;
+        concept_battlefield_3_weapon_f2000;
+        concept_battlefield_3_weapon_m16a4;
+        concept_battlefield_3_weapon_aek971;
+        concept_battlefield_3_weapon_m416;
+        concept_battlefield_3_weapon_ak_74m;
+        concept_battlefield_3_weapon_m16a3        
+	};;
 *);
 
 
 => nrel_battlefield_3_weapon_max_damage: 25.0;
-=> nrel_battlefield_3_weapon_min_damage: 27.0;
-=> nrel_battlefield_3_weapon_min_damage_distance: 10;
-=> nrel_battlefield_3_weapon_max_damage_distance: 50;
-=> nrel_battlefield_3_weapon_magazine_capacity: 30;
-=> nrel_battlefield_3_weapon_rate_of_fire: 900;
-=> nrel_battlefield_3_weapon_full_reload_time: 3.2;
-=> nrel_battlefield_3_weapon_tactical_reload_time: 2.5;
-=> nrel_weapon_fire_mode: concept_weapon_single_fire_mode; concept_weapon_burst_fire_mode; concept_weapon_auto_fire_mode;
-
-
-=> nrel_battlefield_3_weapon_recoil_right: 0.2k;
-=> nrel_battlefield_3_weapon_recoil_left: 0.2k;
-=> nrel_battlefield_3_weapon_recoil_up: 0.8k;
+=> nrel_battlefield_3_weapon_max_damage: 18.4;
 
 <- sc_node_not_relation;;
 
